@@ -1,0 +1,21 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=
+"http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+    <!-- Don't change this value -->
+    <persistence-unit name="my-persistence-unit">
+        <properties>
+
+            <!--The driver class name"/-->
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+            <!--The connection url"/-->
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/soni" />
+              
+            <!--DB login credentials"/-->
+            <property name="hibernate.connection.username" value="root" />
+            
+            <!--The dialect to use-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+        </properties>
+    </persistence-unit>
+</persistence>
